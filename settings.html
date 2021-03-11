@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="settings.css">
+  <script src="settings.js"></script>
+  <title>Settings</title>
+</head>
+
+<body>
+  <header><a href="index.html">Back</a></header>
+  <div id="settings-wrapper">
+    <nav>
+      <h2>Settings</h2>
+      <ul>
+        <li><a href="#launchers">Launchers</a></li>
+      </ul>
+    </nav>
+    <div id="settings">
+      <div id="launchers">
+        <h1>Launchers</h1>
+        <h2>Add launcher library locations</h2>
+        <p>Launcher:</p>
+        <select class="launcher" name="Launcher">
+          <option value="steam">Steam</option>
+          <option value="battlenet">Battle.net</option>
+          <option value="origin">Origin</option>
+          <option value="epicgames">Epic Launcher</option>
+          <option value="uplay">Uplay</option>
+        </select>
+        <p>Launcher library directory:</p>
+        <input class="installationdir" type="url">
+        <button type="button" name="button" onclick="changeInstallationdir()">Submit</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

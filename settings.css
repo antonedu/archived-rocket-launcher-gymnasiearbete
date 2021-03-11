@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+}
+
+header {
+  width: 100%;
+  height: 5vh;
+}
+
+header a {
+  /* text-decoration: none;
+  color: #fff; */
+  line-height: 5vh;
+}
+
+#settings-wrapper {
+  display: flex;
+  color: #fff;
+}
+
+#settings-wrapper nav {
+  width: 300px;
+  height: 95vh;
+  overflow-y: scroll;
+}
+
+#settings-wrapper nav ul {
+  list-style-type: none;
+}
+
+#settings-wrapper nav ul li {
+}
+
+#settings-wrapper #settings {
+  width: 100%;
+  height: 95vh;
+  overflow-y: scroll;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <a href="settings.html">Settings</a>
+  <button id="game-card" type="button" onclick="sql.deleteLibrary(); game.addInstalledGamesToLibrary();">Reload installed games</button>
+  <button id="game-card" type="button" onclick="sql.loadLibrary()">Reload library</button>
+  <div id="library-wrapper">
+    <script>
+      sql.loadLibrary()
+    </script>
+  </div>
+  <h1 style="color: white;">Node <script>document.write(process.versions.node)</script></h1>
+  <h1 style="color: white;">Chrome <script>document.write(process.versions.chrome)</script></h1>
+  <h1 style="color: white;">Electron <script>document.write(process.versions.electron)</script></h1></h1>
+</body>
+</html>

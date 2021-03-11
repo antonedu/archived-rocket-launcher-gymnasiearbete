@@ -1,0 +1,30 @@
+{
+  "name": "rocket-launcher",
+  "productName": "Rocket Launcher",
+  "version": "0.1.0",
+  "description": "A game launcher.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/png/64x64.png --prune=true --out=release-builds",
+    "package-win": "electron-packager . \"Rocket Launcher\" --overwrite --platform=win32 --arch=x64 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=AN --version-string.FileDescription=AN --version-string.ProductName=\"Rocket Launcher\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/64x64.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonedu/rocket-launcher.git"
+  },
+  "author": "Anton Nilsson",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/antonedu/rocket-launcher/issues"
+  },
+  "homepage": "https://github.com/antonedu/rocket-launcher#readme",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.0"
+  }
+}
